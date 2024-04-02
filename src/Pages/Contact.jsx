@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
-import Footer2 from '../Components/Footer2'
-import SubFooter from '../Components/SubFooter'
+import Cimg from "../assets/Cimg.png";
+import Footer2 from "../Components/Footer2";
+import SubFooter from "../Components/SubFooter";
 const Contact = () => {
   return (
     <>
       <div>
         <div className="w-full h-50 flex justify-center items-center">
-          <img src={Nav} alt="" />
+          <img src={Cimg} alt="" className="h-[316px] opacity-60" />
 
           <div className="absolute flex flex-col items-center justify-center"></div>
           <div className="absolute flex flex-col items-center justify-center">
@@ -18,13 +20,13 @@ const Contact = () => {
             </h1>
             <ul className="mt-0 lg:mt-5 flex gap-1 ">
               <li>
-                <Link to="/" style={{ opacity: 1 }}>
+                <Link className="font-poppins leading-[24px] font-medium text-[16px] " to="/" style={{ opacity: 1 }}>
                   Home
                 </Link>
               </li>
               <li style={{ opacity: 0.5 }}>&gt;</li>
               <li>
-                <Link to="/Contact" style={{ opacity: 0.5 }}>
+                <Link className="font-poppins leading-[24px] text-[#000000] font-[300px] text-[16px] " to="/Contact" style={{ opacity: 0.5 }}>
                   Contact
                 </Link>
               </li>
@@ -144,8 +146,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <SubFooter /> 
-      <Footer2/>
+      <SubFooter />
+      <Footer2 />
     </>
   );
 };

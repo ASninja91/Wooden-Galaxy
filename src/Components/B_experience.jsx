@@ -108,7 +108,7 @@ const B_experience = () => {
               />
             </div>
 
-            <div className="flex h-[629px] justify-center w-[445px] flex-col items-center">
+            <div className="flex h-[629px] justify-center w-[345px] flex-col items-center">
               <img className="rounded-xl" src={material} alt="image" />
             </div>
           </div>

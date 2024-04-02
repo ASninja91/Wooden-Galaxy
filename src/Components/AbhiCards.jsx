@@ -15,25 +15,25 @@ import img3 from "../assets/image3.png";
 export default function AbhiCards() {
   return (
     <>
-      <div className="flex  relative w-full flex-wrap px-[5%] ">
-        <div className="basis-full shrink-0 text-center">
-          <h1 className="font-bold font-poppins text-[#333333]  text-[32px] leading-[48px]">Browse The Range</h1>
-          <p className=" text-[20px] leading-[30px] text-center text-[#666666] font-normal ">
+       <div className="flex flex-wrap justify-center px-4 md:px-20">
+        <div className="w-full text-center md:w-1/2 lg:w-1/3">
+          <h1 className="font-bold text-3xl leading-12 text-[#333333]">Browse The Range</h1>
+          <p className="text-lg leading-7 text-[#666666]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
 
         {/*  first div for three div display  */}
-        <div className="flex text-center  mt-10">
-          <Link to="/dining">
-            <Cards  imgLink={img1} title={"Dining"}  />
+        <div className="lg:flex justify-center mt-10">
+          <Link to="/dining" className="w-full sm:w-1/2 md:w-1/3 lg:w-[381px]">
+            <Cards imgLink={img1} title={"Dining"} />
           </Link>
 
-          <Link to="/living">
+          <Link to="/living" className="w-full sm:w-1/2 md:w-1/3 lg:w-[381px]">
             {" "}
             <Cards imgLink={img2} title={"Living"} />
           </Link>
-          <Link to="/bedroom">
+          <Link to="/bedroom" className="w-full sm:w-1/2 md:w-1/3 lg:w-[381px]">
             <Cards imgLink={img3} title={"Bedroom"} />{" "}
           </Link>
         </div>
