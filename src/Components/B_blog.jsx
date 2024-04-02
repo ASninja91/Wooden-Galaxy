@@ -9,23 +9,22 @@ import handmade from "../assets/Rectangle70.png";
 import millen from "../assets/Rectangle71.png";
 import newly from "../assets/Rectangle72.png";
 import pieces from "../assets/Rectangle73.png";
+import Cimg from "../assets/Cimg.png";
 import modern from "../assets/Rectangle74.png";
 import colorfuly from "../assets/Rectangle75.png";
-import Nav from "../assets/faq/Nav.png";
+
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SubFooter from "./SubFooter";
 
 const B_blog = () => {
-
   const [open, setOpen] = useState(false);
-
 
   return (
     <div>
       <section>
         <div className="w-full h-50 flex justify-center">
-          <img src={Nav} alt="" />
+          <img src={Cimg} alt="" className="h-[316px] opacity-50" />
 
           <div className="absolute flex flex-col justify-center mt-2 sm:mt-14">
             <h1 className="font-medium text-3xl sm:text-5xl">Blog</h1>
@@ -99,7 +98,6 @@ const B_blog = () => {
           </div>
         )}
       </section>
-
 
       <section className="mt-24">
         {/* {/ outer div /} */}
